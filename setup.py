@@ -13,6 +13,11 @@ setuptools.setup(
         'pytoolbox[aws]>=13.0.4<14',
         'JSON-log-formatter>=0.2.0<1.0'
     ],
+    entry_points={
+        'console_scripts': [
+            'archive-to-s3=archive_to_s3.process:main'
+        ]
+    },
 
     # Meta-data for upload to PyPI
     author='David Fischer',
