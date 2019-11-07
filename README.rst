@@ -10,6 +10,8 @@ Installation
 
 See `ansible-role-archive-to-s3 <https://github.com/davidfischer-ch/ansible-role-archive-to-s3>`_.
 
+.. Note:: The role is currently being re-factored as this "project" was embedded into it ...
+
 The role will install an entry in the crontab to execute it periodically.
 However you are free to call it directly in the command line `archive-to-s3`.
 
