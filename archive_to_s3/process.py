@@ -22,9 +22,9 @@ def main():
     log = setup_log()
 
     parser = argparse.ArgumentParser(epilog='Archive stuff on S3.')
-    parser.add_argument('--config', action=FullPaths, type=is_file)
+    parser.add_argument('--config', action=FullPaths, required=True, type=is_file)
     parser.add_argument('--simulate', action='store_true')
-    parser.add_argument('--verbosity', choices=(0, 1, 2), type=int)
+    parser.add_argument('--verbosity', choices=(0, 1, 2), default=0, type=int)
     args = parser.parse_args()
 
     def log_it(verbosity, level, message, **extra):
