@@ -40,7 +40,7 @@ Example configuration file (YAML)::
         bucket: my-app-log-archive
         delete: true
         directory: /var/log
-        patterns: ".*\\.gz"
+        patterns: '.*\.gz'
         # host_fqdn will be replaced by the result of socket.getfqdn()
         # e.g. ip-10-1-2-180.eu-west-1.compute.internal on Amazon Web Services
         prefix: logs/my-app/{host_fqdn}
